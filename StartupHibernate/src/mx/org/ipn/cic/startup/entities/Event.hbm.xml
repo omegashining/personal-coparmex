@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="mx.org.ipn.cic.startup.entities.Event" table="event" catalog="startup">
+        <id name="idEvent" type="int">
+            <column name="idEvent" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="type" class="mx.org.ipn.cic.startup.entities.Type" fetch="select">
+            <column name="type_idType" not-null="true" />
+        </many-to-one>
+        <property name="identifier" type="string">
+            <column name="identifier" length="50" not-null="true" />
+        </property>
+        <property name="title" type="string">
+            <column name="title" length="50" not-null="true" />
+        </property>
+        <property name="date" type="string">
+            <column name="datee" length="10" not-null="true" />
+        </property>
+        <property name="time" type="string">
+            <column name="timee" length="10" not-null="true" />
+        </property>
+        <property name="duration" type="int">
+            <column name="duration" not-null="true" />
+        </property>
+        <property name="location" type="string">
+            <column name="location" length="50" not-null="true" />
+        </property>
+        <property name="coordinate" type="string">
+            <column name="coordinate" length="10" not-null="true" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" not-null="true" />
+        </property>
+        <property name="image" type="string">
+            <column name="image" length="50" not-null="true" />
+        </property>
+        <property name="alarm" type="boolean">
+            <column name="alarm" not-null="true" />
+        </property>
+        <property name="stared" type="boolean">
+            <column name="stared" not-null="true" />
+        </property>
+        <set name="authors" inverse="false" table="event_author">
+            <key>
+                <column name="event_idEvent" not-null="true" />
+            </key>
+            <many-to-many entity-name="mx.org.ipn.cic.startup.entities.Author">
+                <column name="author_idAuthor" not-null="true" />
+            </many-to-many>
+        </set>
+    </class>
+</hibernate-mapping>

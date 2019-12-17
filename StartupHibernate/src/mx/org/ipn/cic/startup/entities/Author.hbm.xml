@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="mx.org.ipn.cic.startup.entities.Author" table="author" catalog="startup">
+        <id name="idAuthor" type="int">
+            <column name="idAuthor" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="80" not-null="true" />
+        </property>
+        <property name="organization" type="string">
+            <column name="organization" length="80" not-null="true" />
+        </property>
+        <set name="events" inverse="false" table="event_author">
+            <key>
+                <column name="author_idAuthor" not-null="true" />
+            </key>
+            <many-to-many entity-name="mx.org.ipn.cic.startup.entities.Event">
+                <column name="event_idEvent" not-null="true" />
+            </many-to-many>
+        </set>
+    </class>
+</hibernate-mapping>

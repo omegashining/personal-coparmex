@@ -1,0 +1,207 @@
+{
+ "events": [
+ {
+  "idEvent":1,
+  "type":{
+          "idType":1,
+          "description":"CONFERENCIA"
+         },
+  "identifier":"E00001C01",
+  "title":"Diseño de mapas en Google Map Maker",
+  "date":"3/01/2014",
+  "time":"14:00",
+  "duration":60,
+  "location":"Salón 5, Ala Sur",
+  "coordinate":"800,495",
+  "description":"Descripción de la conferencia, no mas de 5 líneas",
+  "image":"googlemapmaker.png",
+  "alarm":false,
+  "stared":false,
+  "authors":[
+             {
+              "idAuthor":3,
+              "name":"Sergey Brin",
+              "organization":"Google Inc."
+             }
+            ]
+ },
+ {
+  "idEvent":2,
+  "type":{
+          "idType":1,
+          "description":"CONFERENCIA"
+         },
+  "identifier":"E00001C02",
+  "title":"Optimización de sitios usando SEO","date":"12/01/2014",
+  "time":"16:00",
+  "duration":60,
+  "location":"Salón 1, Ala Norte",
+  "coordinate":"579,171",
+  "description":"Descripción de la conferencia, no mas de 5 líneas",
+  "image":"dotrowseo.png",
+  "alarm":false,
+  "stared":false,
+  "authors":[
+             {
+              "idAuthor":2,
+              "name":"Sergio Cerón Figueroa",
+              "organization":"DotRow Solutions"
+             },
+             {
+              "idAuthor":1,
+              "name":"Gabriel Baltazar Pérez",
+              "organization":"DotRow Solutions"
+             }
+            ]
+ },
+ {
+  "idEvent":3,
+  "type":{
+          "idType":1,
+          "description":"CONFERENCIA"
+         },
+  "identifier":"E00001C03",
+  "title":"Introducción a YUI javascript",
+  "date":"13/01/2014",
+  "time":"13:30",
+  "duration":60,
+  "location":"Salón 2",
+  "coordinate":"549,409",
+  "description":"Descripción de la conferencia, no mas de 5 líneas",
+  "image":"yahoooyui.png",
+  "alarm":false,
+  "stared":false,
+  "authors":[
+             {
+              "idAuthor":4,
+              "name":"Kara Swisher",
+              "organization":"Yahoo Inc."
+             }
+            ]
+ },
+ {
+  "idEvent":4,
+  "type":{
+          "idType":1,
+          "description":"CONFERENCIA"
+         },
+  "identifier":"E00001C04",
+  "title":"Desarrollo avanzado de aplicaciones móviles",
+  "date":"16/01/2014",
+  "time":"15:00",
+  "duration":60,
+  "location":"Salón 3, Ala suroeste",
+  "coordinate":"579,546",
+  "description":"Descripción de la conferencia, no mas de 5 líneas",
+  "image":"sencha.png",
+  "alarm":false,
+  "stared":false,
+  "authors":[
+             {
+              "idAuthor":5,
+              "name":"Juan Pérez Hernández",
+              "organization":"Sencha Solutions"
+             }
+            ]
+ },
+ {
+ "idEvent":5,
+ "type":{"idType":1,"description":"CONFERENCIA"},
+ "identifier":"E00001C05",
+ "title":"Posicionamiento de sitios web",
+ "date":"13/01/2014",
+ "time":"10:00",
+ "duration":60,
+ "location":"Salón 5, Ala Sur",
+ "coordinate":"800,495",
+ "description":"Descripción de la conferencia, no mas de 5 líneas",
+ "image":"googleweb.png",
+ "alarm":false,
+ "stared":false,
+ "authors":[
+            {
+             "idAuthor":6,
+             "name":"Larry Page",
+             "organization":"Google Inc."
+            }
+           ]
+ },
+ {
+ "idEvent":6,
+ "type":{"idType":1,"description":"CONFERENCIA"},
+ "identifier":"E00001C06",
+ "title":"Introducción a Metasploit ofensivo",
+ "date":"13/01/2014",
+ "time":"13:00",
+ "duration":60,
+ "location":"Salón 1, Ala Norte",
+ "coordinate":"579,171",
+ "description":"Descripción de la conferencia, no mas de 5 líneas",
+ "image":"dotrowhacking.png",
+ "alarm":false,
+ "stared":false,
+ "authors":[
+            {
+             "idAuthor":2,
+             "name":"Sergio Cerón Figueroa",
+             "organization":"DotRow Solutions"
+            },
+            {
+             "idAuthor":1,
+             "name":"Gabriel Baltazar Pérez",
+             "organization":"DotRow Solutions"
+            }
+           ]
+ },
+ {
+  "idEvent":7,
+  "type":{
+          "idType":1,
+          "description":"CONFERENCIA"
+         },
+  "identifier":"E00001C07",
+  "title":"Virtualización de aplicaciones en la nube",
+  "date":"13/01/2014",
+  "time":"10:30",
+  "duration":60,
+  "location":"Salón 3, Principal",
+  "coordinate":"579,546",
+  "description":"Descripción de la conferencia, no mas de 5 líneas",
+  "image":"amazonec2.png",
+  "alarm":false,
+  "stared":false,
+  "authors":[
+             {
+              "idAuthor":7,
+              "name":"Jeffrey Preston",
+              "organization":"Amazon.com Inc."
+             }
+            ]
+ },
+ {
+  "idEvent":8,
+  "type":{
+          "idType":1,
+          "description":"CONFERENCIA"
+         },
+  "identifier":"E00001C08",
+  "title":"Cómputo Elástico en la Nube",
+  "date":"13/01/2014",
+  "time":"17:00",
+  "duration":60,
+  "location":"Salón 1, Principal",
+  "coordinate":"579,171",
+  "description":"Descripción de la conferencia, no mas de 5 líneas",
+  "image":"amazonvirtual.png",
+  "alarm":false,
+  "stared":false,
+  "authors":[
+             {
+              "idAuthor":7,
+              "name":"Jeffrey Preston",
+              "organization":"Amazon.com Inc."
+             }
+            ]
+ }
+ ]
+}
